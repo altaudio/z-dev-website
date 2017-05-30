@@ -10,6 +10,9 @@
     "copy-webpack-plugin": "^4.0.1",
     "ionic": "^3.2.0",
     "jquery": "^3.2.1",
+    "next": "^2.4.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
     "smooth-scroll": "^0.1.4"
   },
   "devDependencies": {
@@ -51,7 +54,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "dev": "webpack-dev-server --devtool sourcemaps --progress --colors --hot --inline --content-base build",
+    "dev": "next start src",
     "upgrade": "yarn upgrade-interactive",
     "deploy": "yarn run build && firebase deploy --token \"<TOKEN>\"",
     "test": "yarn check && npm run lint",
