@@ -1,5 +1,10 @@
+import React from 'react'
+
+import stylesheet from 'styles/index.scss'
+
 export default () => (
   <div>
-    <h1>Hello</h1>
+    <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+    <p>ciao</p>
   </div>
 )
